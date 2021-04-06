@@ -107,6 +107,7 @@
   </div>
 </div>
 
+
 <body class="pytorch-body">
 
   {% block extrabody %} {% endblock %}
@@ -219,7 +220,7 @@
              {% endif%}
             </div>
             {%- endblock %}
-            {% include "footer.html" %}
+            <!-- {% include "footer.html" %} -->
           </div>
         {%- endblock %}
         </div>
@@ -273,8 +274,14 @@
       });
   </script>
 
+  {%- block footer %} {% endblock %}
+
+  <!-- Begin Footer -->
 
 
+  {% include "cookie_banner.html" %}
+
+  <!-- End Footer -->
 
   <!-- Begin Mobile Menu -->
 
@@ -304,7 +311,6 @@
       </div>
     </div>
   </div>
-
   <!-- End Mobile Menu -->
 
   <script type="text/javascript" src="{{ pathto('_static/js/vendor/anchor.min.js', 1) }}"></script>
